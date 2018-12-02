@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 	//向服务器发送链接请求
 	if (connect(hSocket, (SOCKADDR*)&servAddr, sizeof(servAddr)) == SOCKET_ERROR)
 		ErrorHandling("connect() error!");
-
+	//recv()接受服务器传来的信息
 	strlen = recv(hSocket, message, sizeof(message) - 1, 0);
 	if (strlen == -1)
 		ErrorHandling("read() error!");
