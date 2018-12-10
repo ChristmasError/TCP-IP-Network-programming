@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 	printf("Message from server:%s\n", message);
 	closesocket(hSocket);
 	WSACleanup();
-	getchar();
+	getchar();	getchar();	getchar();
 	return 0;
 }
 
